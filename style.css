@@ -1,0 +1,390 @@
+body {
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: visible; 
+}
+
+/* kode warna */
+
+.main-bg {
+    background:#529f52 !important;  
+}
+
+.main-g {
+    background: #fff;
+}
+
+.main-h {
+    background: #2d2d2d;
+}
+
+.main-color {
+    color: rgb(114, 2, 114) !important;
+}
+
+
+/* Navbar */
+
+.benefit-list {
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.btn-orange {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+}
+.btn-orange:hover {
+    background-color: #e68a00;
+}
+
+/* Underline Animation */
+.nav-hover {
+    position: relative;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+
+  .nav-hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #529f52;
+    transition: width 0.3s ease;
+  }
+
+  .nav-hover:hover {
+    color: #529f52 !important;
+  }
+
+  .nav-hover:hover::after {
+    width: 100%;
+  }
+
+  .btn.pesan-sekarang {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .btn.pesan-sekarang:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+  }
+  
+
+/* banner */
+
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('image/wood-background-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 95vh; 
+    display: flex;
+    align-items: center;
+}
+
+.btn-banner {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif; /* Font modern */
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px; /* Membuat tombol oval */
+    border: 2px solid transparent;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideInOval 1s ease-out;
+  }
+
+  .btn-banner:hover {
+    background: white;
+    color: #529f52;
+    border-color: #529f52;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.08);
+  }
+
+  .btn-banner:active {
+    transform: scale(0.95); /* Efek saat ditekan */
+  }
+
+  @keyframes slideInOval {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.hovered-card {
+    transition: .3s;
+}
+
+.hovered-card:hover {
+    transform: scale(1.1);
+}
+
+.image-container {
+    position: relative; /* Untuk overlay */
+    width: 85%; /* Lebar kolom gambar */
+}
+
+    h1 {
+        font-size: 70px; /* Ukuran font besar untuk layar besar */
+    }
+    
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 45px; /* Ukuran font lebih kecil untuk tablet */
+        }
+    }
+    
+    @media (max-width: 576px) {
+        h1 {
+            font-size: 30px; /* Ukuran font lebih kecil untuk ponsel */
+        }
+    }
+
+.p-t p {
+    font-size: 25px; /* Ukuran font besar untuk layar besar */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 45px; /* Ukuran font lebih kecil untuk tablet */
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 30px; /* Ukuran font lebih kecil untuk ponsel */
+    }
+}
+
+.animate-btn {
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.animate-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.clicked {
+    transform: scale(1.1);
+    background-color: #3d7f3d; /* Ubah warna sementara */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+
+/* promo */
+
+.card-promo {
+    transition: .3s;
+    margin-bottom: 20px;
+}
+
+.card-promo:hover {
+    transform: scale(1.1);
+}
+
+.btn-bannerr {
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: slideInOval 1s ease-out;
+}
+
+.btn-bannerr:hover {
+  color: #529f52;
+  border-color: #529f52;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.08);
+}
+
+.btn-bannerr:active {
+  transform: scale(0.95); /* Efek saat ditekan */
+}
+
+
+/* pelayanan */
+
+
+ /* Animasi untuk efek hover */
+
+  /* Ikon dengan animasi masuk */
+  .icon-service {
+    width: 70px;
+    height: 70px;
+    color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .icon-service:hover {
+    transform: rotate(360deg); /* Rotasi saat hover */
+  }
+
+  /* Animasi masuk ke layar */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hovered-card {
+    animation: fadeInUp 1s ease-out;
+  }
+
+  /* Teks pada kartu */
+  h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+.icon-service {
+    width: 90px;
+    height: 90px;
+    border: solid #fff 2px;
+    border-radius: 50%;
+    color:#fff;
+}
+
+.service {
+    margin-top: -100;
+}
+
+.gb-1 {
+    margin: -100px;
+}
+
+.gb-2 {
+    margin: -130px;
+}
+
+svg {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* menu favorit */
+
+.menu-favorit {
+    background-color: rgba(243, 243, 243);
+}
+
+.menu-favorit-content {
+    transition: .3s;
+}
+
+.menu-favorit-content:hover {
+    transform: scale(1.1);
+}
+
+/* produck */
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    text-align: center;
+  }
+}
+
+
+/* testimony */
+
+.main-bg svg {
+    display: block;
+    margin: 0; /* Pastikan tidak ada margin tambahan */
+  }
+
+  .testi {
+    margin-top: -100px;
+  }
+
+  .testimonial-card {
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.testimonial-card img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.star-rating {
+    color: gold;
+}
+
+/* footer*/
+
+/* produk banner */
+.produk-banner {
+    height: 55vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image/stewed-chicken-drumsticks-galangal-garlic-lemon.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* animation produk */
+
+/* Efek animasi pada card */
+.card {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek animasi pada gambar */
+.card-img-top {
+    transition: transform 0.3s ease; 
+}
+
+.card:hover .card-img-top {
+    transform: translateY(-10px);
+}
+
+
+/* animasi scroll */

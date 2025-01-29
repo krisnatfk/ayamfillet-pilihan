@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Projeck | Ayam Fillet</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light main-g position-sticky top-0" style="font-size:16px;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <img class="me-auto fw-bold" style="width: 7%; margin-left: 40px;" src="image/LOGO AYAM.png" alt="Logo AyamKu">
+          <ul class="navbar-nav">
+            <li class="nav-item me-5">
+              <a class="nav-link nav-hover fw-bold active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link nav-hover fw-bold active" href="produk.html">Produk</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link nav-hover fw-bold active" href="promo.html">Promo</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link nav-hover fw-bold active" href="#kontak">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-success pesan-sekarang" href="https://wa.me/62895415457622?text=Halo%2C%20saya%20ingin%20memesan%20produk%20Anda" target="_blank">Pesan Sekarang</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+
+      <!-- benner -->
+      <div class="container-fluid banner">
+        <div class="row align-items-center">
+
+            <div class="p-t col-lg-6 col-md-6 text-center text-md-start">
+              <h1 class="fw-bold text-light ms-sm-3 ms-md-5">Butuh Ayam Potong dan Daging Yang Berkualitas? AyamKu Aja</h1>
+                <p class="text-light lh-1.5 ms-sm-3 ms-md-5 mt-4">Setiap potong ayam dari Ayamku adalah kualitas premium untuk hidangan istimewa di rumah Anda.</p>
+                <a href="produk.html" class="btn-banner btn-lg text-center ms-sm-3 ms-md-5 animate-btn bg-success" 
+                style="text-decoration: none; color: white; padding: 10px 20px; border-radius: 50px;">
+                Shop Now &#8594;
+             </a>
+            </div>
+
+            <div class="col-lg-6 col-md-6 text-center">
+              <img src="image/Untitled (1600 x 1600 px) (2).png" alt="Maskot Ayam" class="w-100">
+          </div>
+        </div>
+    </div>
+    <div>
+
+       <!-- promo -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <h2 class="text-center fw-bold">Promo Minggu Ini</h2>
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-sm-6 col-lg-3 mb-3" data-aos="fade-down"data-aos-easing="linear" data-aos-duration="1000">
+                        <div class="card">
+                            <img src="image/dada-ayam-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="font-weight: bold;">Beli 3Kg Dada Ayam Gratis 1/4Kg</h5>
+                              <p class="card-text">Nikmati penawaran spesial! Beli 3Kg dada ayam segar dan dapatkan bonus 1/4Kg secara gratis. Kesegaran terjamin!</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-3" data-aos="fade-down"data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="card">
+                            <img src="image/paha-ayam-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="font-weight: bold;">Beli 3Kg Paha Ayam Gratis 1/4Kg</h5>
+                              <p class="card-text">Dapatkan paha ayam pilihan dengan promo menarik! Beli 3Kg dan bawa pulang tambahan 1/4Kg secara cuma-cuma.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div  class="col-sm-6 col-lg-3 mb-3" data-aos="fade-down"data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="card">
+                            <img src="image/sayap-ayam-2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="font-weight: bold;">Beli 3Kg Sayap Ayam Gratis 1/4Kg</h5>
+                              <p class="card-text">Beli 3Kg sayap ayam segar dengan harga spesial dan dapatkan tambahan 1/4Kg secara gratis. Stok terbatas!</p>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="mt-2 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="100"> 
+                        <a href="promo.html" class="btn btn-lg btn-outline-success text-dark btn-bannerr" style="text-decoration: none; color: white; padding: 10px 20px; border-radius: 50px;">Lihat Semua Promo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- service -->
+         <div class="container-fluid py-5 bg-success">
+            <div class="container">
+                <h2 class="text-light text-center mb-5" style="font-weight: bold;">Kami Melayani</h2>
+
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3" data-aos="flip-left" data-aos-duration="1500">
+                        <div class="d-flex justify-content-center">
+                            <div class="icon-service d-flex align-items-center justify-content-center">
+                                <i class="bi bi-bicycle display-6"></i>
+                            </div>
+                        </div>
+                        <div class="mt-3 text-white text-center">
+                            <h5>Delivery</h5>
+                            <p>Kami menyediakan layanan pengantaran cepat dan aman langsung ke lokasi Anda. Pesan sekarang dan nikmati kemudahan tanpa harus keluar rumah!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3" data-aos="flip-up" data-aos-duration="1500">
+                        <div class="d-flex justify-content-center">
+                            <div class="icon-service d-flex align-items-center justify-content-center">
+                                <i class="bi bi-basket display-6"></i>
+                            </div>
+                        </div>
+                        <div class="mt-3 text-white text-center">
+                            <h5>Take Away</h5>
+                            <p>Pesan dan ambil langsung di tempat kami tanpa harus menunggu lama. Cocok untuk Anda yang memiliki aktivitas padat dan butuh makanan cepat saji!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3" data-aos="flip-right" data-aos-duration="1500">
+                        <div class="d-flex justify-content-center">
+                            <div class="icon-service d-flex align-items-center justify-content-center">
+                                <i class="bi bi-hammer display-6"></i>
+                            </div>
+                        </div>
+                        <div class="mt-3 text-white text-center">
+                            <h5>Di Potong Potong</h5>
+                            <p>Kami melayani pemotongan sesuai permintaan pelanggan agar lebih praktis dan siap dimasak. Dapatkan potongan terbaik untuk kebutuhan masakan Anda!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <!-- produk -->
+         <div class="container py-5">
+          <h2 class="text-center fw-bold mb-4">Produk Paling Laris</h2>
+          <div class="row justify-content-center g-4">
+            <!-- Produk 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+              <div class="card shadow-sm h-100">
+                <img src="image/dada-ayam-1.jpg" class="card-img-top" alt="Dada Ayam Fillet">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Dada Ayam Fillet</h5>
+                  <p class="card-text fw-bold">Rp. 45.000 / kg</p>
+                  <div class="dropdown">
+                    <button class="btn btn-outline-success dropdown-toggle w-100 pb-1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Selengkapnya
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                      <li><a class="dropdown-item" href="https://wa.me/6285877401876?text=Halo,%20saya%20ingin%20memesan%20Dada%20Ayam%20Fillet">Beli</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Produk 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="100">
+              <div class="card shadow-sm h-100">
+                <img src="image/paha-ayam-1.jpg" class="card-img-top" alt="Paha Ayam Fillet">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Paha Ayam Fillet</h5>
+                  <p class="card-text fw-bold">Rp. 50.000 / kg</p>
+                  <div class="dropdown">
+                    <button class="btn btn-outline-success dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Selengkapnya
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                      <li><a class="dropdown-item" href="https://wa.me/6285877401876?text=Halo,%20saya%20ingin%20memesan%20Paha%20Ayam%20Fillet">Beli</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Produk 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200">
+              <div class="card shadow-sm h-100">
+                <img src="image/sayap-ayam-1.jpg" class="card-img-top" alt="Sayap Ayam Fillet">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Sayap Ayam Fillet</h5>
+                  <p class="card-text fw-bold">Rp. 40.000 / kg</p>
+                  <div class="dropdown">
+                    <button class="btn btn-outline-success dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Selengkapnya
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                      <li><a class="dropdown-item" href="https://wa.me/6285877401876?text=Halo,%20saya%20ingin%20memesan%20Sayap%20Ayam%20Fillet">Beli</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Produk 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="300">
+              <div class="card shadow-sm h-100">
+                <img src="image/ayam-utuh-1.jpg" class="card-img-top" alt="Ceker Ayam">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Ayam Utuh</h5>
+                  <p class="card-text fw-bold">Rp. 25.000 / kg</p>
+                  <div class="dropdown">
+                    <button class="btn btn-outline-success dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Selengkapnya
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                      <li><a class="dropdown-item" href="https://wa.me/6285877401876?text=Halo,%20saya%20ingin%20memesan%20Ceker%20Ayam">Beli</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="mt-5 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+              <a href="produk.html" class="btn btn-lg btn-outline-success text-dark btn-bannerr" style="text-decoration: none; padding: 10px 20px; border-radius: 50px;">Lihat Semua Produk</a>
+            </div>
+          </div>
+        </div>
+        
+      
+      
+
+
+          <!-- Testimoni -->
+           <!-- <div class="container-fluid py-5 main-bg">
+            <div class="container">
+                <h2 class="text-light text-center mb-5" style="font-weight: bold;">Apa Kata Customer</h2>
+                <div class="row" data-masonry='{"percentPosition": true }''>
+                  <div class="col-lg-4 mb-3 hovered-card" data-aos="fade-down-right" data-aos-duration="1500">
+                    <div class="card p-3 position-relative">
+                      <figure class="d-flex align-items-center">
+                        <img src="/image/user-1.png" class="img-fluid rounded-circle" alt="Foto Krisna Taufik" style="max-width: 30px;">
+                        <figcaption class="ms-3">
+                          Ultramen Merah
+                        </figcaption>
+                      </figure>
+                      <blockquote class="blockquote">
+                        <p>Ayamnya Banyak Murah Lagi</p>
+                      </blockquote>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos recusandae cumque dolorum
+                      </p>
+      
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <button class="btn btn-sm">
+                          <i class="bi bi-hand-thumbs-up" style="font-size: 20px; color: #007bff;"></i>
+                        </button>
+                        <button class="btn btn-sm">
+                          <i class="bi bi-hand-thumbs-down" style="font-size: 20px; color: #dc3545;"></i> 
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="col-lg-4 mb-3 hovered-card" data-aos="fade-down" data-aos-duration="1500">
+                      <div class="card p-3 position-relative">
+                        <figure class="d-flex align-items-center">
+                          <img src="/image/user-1.png" class="img-fluid rounded-circle" alt="Foto Krisna Taufik" style="max-width: 30px;">
+                          <figcaption class="ms-3">
+                            Krisna Taufik
+                          </figcaption>
+                        </figure>
+                        <blockquote class="blockquote">
+                          <p>Ayamnya Banyak Murah Lagi Banyak Diskonnya Keren Pokoknya</p>
+                        </blockquote>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos recusandae cumque dolorum, nisi tempore porro aperiam odit quisquam culpa cum?
+                        </p>
+                        <div class="position-absolute top-0 end-0 p-2">
+                          <button class="btn btn-sm">
+                            <i class="bi bi-hand-thumbs-up" style="font-size: 20px; color: #007bff;"></i>
+                          </button>
+                          <button class="btn btn-sm">
+                            <i class="bi bi-hand-thumbs-down" style="font-size: 20px; color: #dc3545;"></i> 
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-3 hovered-card" data-aos="fade-down-left" data-aos-duration="1500">
+                      <div class="card p-3 position-relative">
+                        <figure class="d-flex align-items-center">
+                          <img src="/image/user-1.png" class="img-fluid rounded-circle" alt="Foto Krisna Taufik" style="max-width: 30px;">
+                          <figcaption class="ms-3">
+                            Tsubasa 
+                          </figcaption>
+                        </figure>
+                        <blockquote class="blockquote">
+                          <p>Banyak Diskonnya </p>
+                        </blockquote>Pokoknya
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ab. Non voluptatibus qui cumque iste quos quasi, quisquam distinctio delectus natus autem voluptas earum fugiat odit consequuntur ipsum commodi iure modi dolorem ad necessitatibus! Voluptatibus esse officiis fugit totam rem quaerat quis odit necessitatibus. Sequi ab dolore distinctio facilis id.
+                        </p>
+
+                        <div class="position-absolute top-0 end-0 p-2">
+                          <button class="btn btn-sm">
+                            <i class="bi bi-hand-thumbs-up" style="font-size: 20px; color: #007bff;"></i>
+                          </button>
+                          <button class="btn btn-sm">
+                            <i class="bi bi-hand-thumbs-down" style="font-size: 20px; color: #dc3545;"></i> 
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="col-lg-4 mb-3 hovered-card" data-aos="fade-up-right" data-aos-duration="1500" data-aos-delay="100">
+                  <div class="card p-3">
+                      <figure>
+                          <blockquote class="blockquote">
+                            <p>Delivery Cepat</p>
+                          </blockquote>
+                          <figcaption class="blockquote-footer">
+                            Abang Jay
+                          </figcaption>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga modi unde soluta laboriosam officiis quia cum consequatur nobis nam natus ad possimus nulla accusantium commodi itaque ipsa rerum, repellendus porro.
+                          </p>
+                        </figure>
+                  </div>
+              </div>
+              <div class="col-lg-4 mb-3 hovered-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                <div class="card p-3">
+                    <figure>
+                        <blockquote class="blockquote">
+                          <p>Tempatnya Bersih</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                          Dimas Ganteng
+                        </figcaption>
+                        <p>
+                          Lorem ipsum dolor sit amet.
+                        </p>
+                      </figure>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3 hovered-card" data-aos="fade-up-left" data-aos-duration="1500" data-aos-delay="100">
+              <div class="card p-3">
+                  <figure>
+                      <blockquote class="blockquote">
+                        <p>Take Awaynya Ga Pake Lama dan kerja karyawannya cepat</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        Santo
+                      </figcaption>
+                      <p>
+                        Lorem ipsum dolor sit amet.
+                      </p>
+                    </figure>
+              </div>
+          </div>
+                </div>
+            </div>
+            
+           </div> -->
+
+           <div class="container-fluid py-5 bg-success">
+            <div class="container">
+              <h2 class="text-light text-center mb-5 fw-bold">Apa Kata Customer</h2>
+              <div class="row g-4" data-masonry='{"percentPosition": true }'>
+                <!-- Testimoni 1 -->
+                <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-down"data-aos-easing="linear" data-aos-duration="1000">
+                  <div class="card p-3 position-relative">
+                    <figure class="d-flex align-items-center">
+                      <img src="image/user-2.png" class="img-fluid rounded-circle" alt="Foto Ultramen Merah" style="max-width: 40px;">
+                      <figcaption class="ms-3">Ultramen Merah</figcaption>
+                    </figure>
+                    <blockquote class="blockquote mt-3">
+                      <p>"Ayamnya Banyak Murah Lagi"</p>
+                    </blockquote>
+                    <p>Ayamnya segar dan harganya sangat bersahabat. Cocok buat stok di rumah. Pasti beli lagi!</p>
+                    <div class="position-absolute top-0 end-0 p-2">
+                      <button class="btn btn-sm">
+                        <i class="bi bi-hand-thumbs-up text-primary" style="font-size: 20px;"></i>
+                      </button>
+                      <button class="btn btn-sm">
+                        <i class="bi bi-hand-thumbs-down text-danger" style="font-size: 20px;"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Testimoni 2 -->
+                <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-down"data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="100">
+                  <div class="card p-3 position-relative">
+                    <figure class="d-flex align-items-center">
+                      <img src="image/user-2.png" class="img-fluid rounded-circle" alt="Foto Krisna Taufik" style="max-width: 40px;">
+                      <figcaption class="ms-3">Krisna Taufik</figcaption>
+                    </figure>
+                    <blockquote class="blockquote mt-3">
+                      <p>"Ayamnya Banyak, Murah Lagi Banyak Diskonnya! Keren Pokoknya."</p>
+                    </blockquote>
+                    <p>Setiap minggu ada promo yang menarik, bikin hemat belanja. Kualitas ayamnya juga terjamin!</p>
+                    <div class="position-absolute top-0 end-0 p-2">
+                      <button class="btn btn-sm">
+                        <i class="bi bi-hand-thumbs-up text-primary" style="font-size: 20px;"></i>
+                      </button>
+                      <button class="btn btn-sm">
+                        <i class="bi bi-hand-thumbs-down text-danger" style="font-size: 20px;"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Testimoni 3 -->
+                <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-down"data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200">
+                  <div class="card p-3 position-relative">
+                    <figure class="d-flex align-items-center">
+                      <img src="image/user-2.png" class="img-fluid rounded-circle" alt="Foto Tsubasa" style="max-width: 40px;">
+                      <figcaption class="ms-3">Tsubasa</figcaption>
+                    </figure>
+                    <blockquote class="blockquote mt-3">
+                      <p>"Banyak Diskonnya Pokoknya"</p>
+                    </blockquote>
+                    <p>Belanja di sini selalu hemat karena sering ada promo. Pelayanannya juga ramah dan cepat.</p>
+                    <div class="position-absolute top-0 end-0 p-2">
+                      <button class="btn btn-sm">
+                        <i class="bi bi-hand-thumbs-up text-primary" style="font-size: 20px;"></i>
+                      </button>
+                      <button class="btn btn-sm">
+                        <i class="bi bi-hand-thumbs-down text-danger" style="font-size: 20px;"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-down"data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200">
+                  <div class="card p-3 position-relative">
+                    <figure class="d-flex align-items-center">
+                      <img src="image/user-1.png" class="img-fluid rounded-circle" alt="Foto Tsubasa" style="max-width: 40px;">
+                      <figcaption class="ms-3">Cindy</figcaption>
+                    </figure>
+                    <blockquote class="blockquote mt-3">
+                      <p>"Delivery Cepat"</p>
+                    </blockquote>
+                    <p>Pesanan datang tepat waktu, ayamnya masih segar. Sangat puas dengan layanan pengiriman.</p>
+                    <div class="position-absolute top-0 end-0 p-2">
+                      <button class="btn btn-sm">
+                        <i class="bi bi-hand-thumbs-up text-primary" style="font-size: 20px;"></i>
+                      </button>
+                      <button class="btn btn-sm">
+                        <i class="bi bi-hand-thumbs-down text-danger" style="font-size: 20px;"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-down"data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200">
+                  <div class="card p-3 position-relative">
+                    <figure class="d-flex align-items-center">
+                      <img src="image/user-1.png" class="img-fluid rounded-circle" alt="Foto Tsubasa" style="max-width: 40px;">
+                      <figcaption class="ms-3">Vega S</figcaption>
+                    </figure>
+                    <blockquote class="blockquote mt-3">
+                      <p>"Take Awaynya Ga Pake Lama, kerja karyawannya cepat"</p>
+                    </blockquote>
+                    <p>Proses pemesanan cepat, tidak perlu antre lama. Sangat praktis buat yang buru-buru!</p>
+                    <div class="position-absolute top-0 end-0 p-2">
+                      <button class="btn btn-sm">
+                        <i class="bi bi-hand-thumbs-up text-primary" style="font-size: 20px;"></i>
+                      </button>
+                      <button class="btn btn-sm">
+                        <i class="bi bi-hand-thumbs-down text-danger" style="font-size: 20px;"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-down"data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="200">
+                  <div class="card p-3 position-relative">
+                    <figure class="d-flex align-items-center">
+                      <img src="image/user-2.png" class="img-fluid rounded-circle" alt="Foto Tsubasa" style="max-width: 40px;">
+                      <figcaption class="ms-3">Super Dede</figcaption>
+                    </figure>
+                    <blockquote class="blockquote mt-3">
+                      <p>"Tempatnya Bersih"</p>
+                    </blockquote>
+                    <p>Toko bersih dan nyaman, bikin belanja jadi lebih enak. Produk yang dijual juga fresh.</p>
+                    <div class="position-absolute top-0 end-0 p-2">
+                      <button class="btn btn-sm">
+                        <i class="bi bi-hand-thumbs-up text-primary" style="font-size: 20px;"></i>
+                      </button>
+                      <button class="btn btn-sm">
+                        <i class="bi bi-hand-thumbs-down text-danger" style="font-size: 20px;"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+           <!-- <div class="container my-5">
+            <h2 class="text-center mb-4">Testimoni Pelanggan</h2>
+            <div class="row g-4">
+
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <div class="card-body text-center">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Foto Pelanggan" width="100" height="100">
+                    <h5 class="card-title">Nama Pelanggan 1</h5>
+                    <p class="card-text">"Ayam fillet di toko ini sangat segar dan berkualitas! Saya pasti akan kembali membeli lagi."</p>
+                  </div>
+                  <img src="https://via.placeholder.com/300x200" class="card-img-bottom" alt="Foto Toko">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <div class="card-body text-center">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Foto Pelanggan" width="100" height="100">
+                    <h5 class="card-title">Nama Pelanggan 2</h5>
+                    <p class="card-text">"Pelayanan cepat dan harga sangat terjangkau. Sangat puas belanja di sini."</p>
+                  </div>
+                  <img src="https://via.placeholder.com/300x200" class="card-img-bottom" alt="Foto Toko">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <div class="card-body text-center">
+                    <img src="/" class="rounded-circle mb-3" alt="Foto Pelanggan" width="100" height="100">
+                    <h5 class="card-title">Nama Pelanggan 3</h5>
+                    <p class="card-text">"Ayam filletnya fresh, cocok banget untuk masakan keluarga. Recomended!"</p>
+                  </div>
+                  <img src="https://via.placeholder.com/300x200" class="card-img-bottom" alt="Foto Toko">
+                </div>
+              </div>
+            </div>
+          </div> -->
+           <!-- banner shop now -->
+
+           <!-- <div class="container pt-5">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 text-center" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="220">
+                    <div class="mt-3">
+                        <img src="/image/ordernow.webp" alt="Ayam Fillet" class="img-fluid" style="width: 60%;">
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="220">
+                    <h2>Dengan Ayam Fillet Kami, Anda Mendapat Benefit:</h2>
+                    <div class="benefit-list mt-4">
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-warning"></i> Kualitas Konsisten</li>
+                            <li><i class="bi bi-check-circle-fill text-warning"></i> Supplier Bersertifikasi Halal</li>
+                            <li><i class="bi bi-check-circle-fill text-warning"></i> Pengiriman yang dapat diandalkan</li>
+                            <li><i class="bi bi-check-circle-fill text-warning"></i> Fasilitas Bayar Tempo</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4 d-flex justify-content-center">
+                        <button class="btn btn-warning">Berlangganan</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        
+
+           <!-- contact -->
+           <div id="kontak" class="container-fluid py-5">
+            <div class="container">
+              <h2 class="text-center" style="font-weight: bold;">Contact</h2>
+              <p class="text-center">Hubungi Kami Jika Butuh Bantuan !!!</p>
+          
+              <div class="row">
+                <!-- Form Kontak (diletakkan di sebelah kiri) -->
+                <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-down"data-aos-easing="linear" data-aos-duration="1000">
+                  <form class="mt-4" id="contactForm" onsubmit="return validateForm()" method="post">
+                    <div class="mb-3">
+                      <label for="Nama" class="form-label">Nama</label>
+                      <input type="text" class="form-control" id="nama" required>
+                      <div class="invalid-feedback" id="namaError" style="display: none;">
+                        Nama tidak valid atau kosong.
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="No Kontak" class="form-label">No. Kontak</label>
+                      <input type="text" class="form-control" id="nokontak" required>
+                      <div class="invalid-feedback" id="nokontakError" style="display: none;">
+                        No. Kontak tidak valid atau kosong.
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="Pesan" class="form-label">Pesan</label>
+                      <textarea class="form-control" id="pesan" rows="5" required></textarea>
+                      <div class="invalid-feedback" id="pesanError" style="display: none;">
+                        Pesan tidak valid atau kosong.
+                      </div>
+                    </div>
+                    <div>
+                      <button type="submit" class="btn btn-success text-light w-100">Kirim</button>
+                    </div>
+                  </form>
+                </div>
+          
+                <!-- Maps --> 
+                <div class="col-md-6 col-lg-6" data-aos="fade-down"data-aos-easing="linear" data-aos-duration="1000">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1986.14196713316!2d105.24882238384812!3d-5.373602450354294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db4e3e7712e7%3A0x1bba0933d8d609f2!2sAyam%20Potong%20Fillet%20fress!5e0!3m2!1sen!2sid!4v1733213818220!5m2!1sen!2sid" width="100%" height="400" style="border:0; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+            <!-- footer -->
+            <footer class="bg-dark text-light py-5">
+              <div class="container">
+                  <div class="row g-4">
+                      <!-- Column 1: Download Our App -->
+                      <div class="col-md-3">
+                          <h5 class="fw-bold">Download Our App</h5>
+                          <p class="small">Download App Android and iOS Mobile Phone</p>
+                          <div class="d-flex">
+                              <img src="image/play-store.png" alt="Play Store" class="img-fluid me-2" style="max-width: 120px;">
+                              <img src="image/app-store.png" alt="App Store" class="img-fluid" style="max-width: 120px;">
+                          </div>
+                      </div>
+          
+                      <!-- Column 2: Logo and About -->
+                      <div class="col-md-4 text-center">
+                          <img src="image/LOGO AYAM.png" alt="Logo Ayamku" class="img-fluid mb-3" style="max-width: 220px;">
+                      </div>
+          
+                      <!-- Column 3: Useful Links -->
+                      <div class="col-md-2 offset-md-1 text-md-end">
+                          <h5 class="fw-bold">Useful Links</h5>
+                          <ul class="list-unstyled small">
+                              <li><a href="#" class="text-light text-decoration-none">Coupons</a></li>
+                              <li><a href="#" class="text-light text-decoration-none">Blog Post</a></li>
+                              <li><a href="#" class="text-light text-decoration-none">Return Policy</a></li>
+                              <li><a href="#" class="text-light text-decoration-none">Join Affiliate</a></li>
+                          </ul>
+                      </div>
+          
+                      <!-- Column 4: Follow Us -->
+                      <div class="col-md-2 text-md-end">
+                          <h5 class="fw-bold">Follow Us</h5>
+                          <ul class="list-unstyled small">
+                              <li><a href="#" class="text-light text-decoration-none">Facebook</a></li>
+                              <li><a href="#" class="text-light text-decoration-none">Twitter</a></li>
+                              <li><a href="#" class="text-light text-decoration-none">Instagram</a></li>
+                              <li><a href="#" class="text-light text-decoration-none">YouTube</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <hr class="text-light my-4">
+                  <p class="text-center small mb-0">Copyright &copy; 2024 Krisna Taufik. All Rights Reserved.</p>
+              </div>
+          </footer>
+          
+          
+          
+        
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+        <script>
+    AOS.init();
+  </script>
+</body>
+</html>

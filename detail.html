@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Detail</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light main-g position-sticky top-0" style="font-size:16px;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <img class="me-auto fw-bold" style="width: 7%; margin-left: 40px;" src="image/LOGO AYAM.png" alt="Logo AyamKu">
+          <ul class="navbar-nav">
+            <li class="nav-item me-5">
+              <a class="nav-link nav-hover fw-bold active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link nav-hover fw-bold active" href="produk.html">Produk</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link nav-hover fw-bold active" href="promo.html">Promo</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-success pesan-sekarang" href="https://wa.me/628123456789?text=Halo%2C%20saya%20ingin%20memesan%20produk%20Anda" target="_blank">Pesan Sekarang</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      
+
+    <!-- breadcrumb -->
+      <div class="container-fluid pt-5">
+        <div class="container">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="produk.html" style="text-decoration: none;">Produk</a></li>
+                  <li class="breadcrumb-item">Ayam Utuh</li>
+                  <li class="breadcrumb-item active" aria-current="page">Ayam Utuh 1Kg</li>
+                </ol>
+              </nav>
+        </div>
+      </div>
+
+      <!-- main -->
+       <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <!-- produk image -->
+                <div class="col-md-5 col-lg-4 mb-3">
+                    <img src="image/ayam-utuh-1.jpg" class="img-fluid" alt="">
+                </div>
+                 <!-- produk detail -->
+                <div class="col-md-6 offset-md-1 col-lg-7 offset-lg-1 mb-5">
+                    <h1>Ayam Utuh 1Kg</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure accusantium enim vero quidem culpa perspiciatis et! Dolore, enim debitis.</p>
+                    <h2 class="text-dark">Rp 35.000</h2>
+                    <button class="btn btn-outline-success mt-3">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+       </div>
+
+       <!-- rekomendasi produk -->
+        <div class="container-fluid py-5 mt-5 main-bg">
+            <div class="container">
+                <h2 class="text-light text-center mb-5">Rekomendasi Untuk Anda</h2>
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-2 mb-3">
+                        <a href="detail.html">
+                        <img src="image/dada-ayam-1.jpg" class="img-fluid img-thumbnail" alt="">
+                    </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-2 mb-3">
+                        <a href="detail.html">
+                            <img src="image/paha-ayam-2.jpg" class="img-fluid img-thumbnail" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-2 mb-3">
+                        <a href="detail.html">
+                            <img src="image/paha-ayam-4avif.avif" class="img-fluid img-thumbnail" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-2 mb-3">
+                        <a href="detail.html">
+                            <img src="image/sayap-ayam-2.jpg" class="img-fluid img-thumbnail" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Column 1: Download Our App -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold">Download Our App</h5>
+                    <p class="small">Download App Android and iOS Mobile Phone</p>
+                    <div class="d-flex">
+                        <img src="image/play-store.png" alt="Play Store" class="img-fluid me-2" style="max-width: 120px;">
+                        <img src="image/app-store.png" alt="App Store" class="img-fluid" style="max-width: 120px;">
+                    </div>
+                </div>
+    
+                <!-- Column 2: Logo and About -->
+                <div class="col-md-4 text-center">
+                    <img src="image/LOGO AYAM.png" alt="Logo Ayamku" class="img-fluid mb-3" style="max-width: 220px;">
+                </div>
+    
+                <!-- Column 3: Useful Links -->
+                <div class="col-md-2 offset-md-1 text-md-end">
+                    <h5 class="fw-bold">Useful Links</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-light text-decoration-none">Coupons</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Blog Post</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Return Policy</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Join Affiliate</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Column 4: Follow Us -->
+                <div class="col-md-2 text-md-end">
+                    <h5 class="fw-bold">Follow Us</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-light text-decoration-none">Facebook</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Twitter</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Instagram</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="text-light my-4">
+            <p class="text-center small mb-0">Copyright &copy; 2024 Krisna Taufik. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+      <script>
+  AOS.init();
+</script>
+</body>
+</html>

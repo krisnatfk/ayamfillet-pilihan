@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Produk</title>
+    
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light main-g position-sticky top-0" style="font-size:16px;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <img class="me-auto fw-bold" style="width: 7%; margin-left: 40px;" src="image/LOGO AYAM.png" alt="Logo AyamKu">
+            <ul class="navbar-nav">
+              <li class="nav-item me-5">
+                <a class="nav-link nav-hover fw-bold active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link nav-hover fw-bold active" href="#">Produk</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link nav-hover fw-bold active" href="promo.html">Promo</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-success pesan-sekarang" href="https://wa.me/628123456789?text=Halo%2C%20saya%20ingin%20memesan%20produk%20Anda" target="_blank">Pesan Sekarang</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+
+      <!-- banner -->
+      <div class="container-fluid produk-banner d-flex align-items-center">
+        <div class="container text-center">
+            <h2 class="text-light fw-bold mb-3">
+                Produk Murah Berkualitas di AyamKu
+            </h2>
+            <h6 class="text-light mb-3">
+                Cari produk ayam segar berkualitas yang tersedia di AyamKu
+            </h6>
+    
+            <!-- Input Pencarian dan Sortir -->
+            <div class="col-md-8 offset-md-2">
+                <div class="input-group input-group-sm">
+                    <!-- Input Cari Produk -->
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="form-control form-control-sm" 
+                        placeholder="Cari produk...">
+                    <!-- Tombol Telusuri -->
+                    <button 
+                        class="btn btn-success btn-sm text-light" 
+                        type="button" 
+                        onclick="searchAndSort()">
+                        Telusuri
+                    </button>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+    
+
+       <!-- produk content -->
+
+
+                    <!-- produk -->
+                    <div class="container py-5">
+                      <h2 class="text-center fw-bold">Produk</h2>
+                      <div class="mb-4 text-start pt-3">
+                        <select class="form-select form-select-sm w-auto d-inline-block" id="sortSelect" onchange="sortProducts(this.value)">
+                            <option value="">Pilih Urutan Harga...</option>
+                            <option value="asc">Harga Termurah ke Termahal</option>
+                            <option value="desc">Harga Termahal ke Termurah</option>
+                        </select>
+                    </div>
+                    
+                      <div class="row mt-5 justify-content-center">
+                        <div class="col-sm-6 col-lg-3 mb-3">
+                            <div class="text-left shadow-sm hover-border position-relative">
+                              <img src="image/ayam-utuh-2.jpg" class="card-img-top" alt="Ayam Utuh - 1Kg">
+                              <div class="card-body">
+                                <h5 class="card-title">Ayam Utuh - 1Kg</h5>
+                                <p class="card-text font-weight-bold">Rp. 35.000</p>
+                                <div class="dropdown">
+                                  <button class="btn btn-outline-success dropdown-toggle w-100" 
+                                          type="button" 
+                                          id="dropdownMenuButton1" 
+                                          data-bs-toggle="dropdown" 
+                                          aria-expanded="false">
+                                    Selengkapnya
+                                  </button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                                    <li>
+                                      <a class="dropdown-item" 
+                                         href="https://wa.me/628123456789?text=Halo%2C%20saya%20ingin%20memesan%20produk%20Ayam%20Utuh%20-%201Kg%20dengan%20harga%20Rp.%2035.000" 
+                                         target="_blank">
+                                        Beli
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                      
+                          <div class="col-sm-6 col-lg-3 mb-3" >
+                              <div class="text-left shadow-sm hover-border position-relative">
+                                  <img src="image/dada-ayam-1.jpg" class="card-img-top" alt="Comfy Walk Women's Casual Shoes - Beige">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Dada Ayam - 1Kg</h5>
+                                      <p class="card-text font-weight-bold">Rp. 45.000</p>
+                                      <div class="dropdown">
+                                        <button class="btn btn-outline-success dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Selengkapnya
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                                          <li><a class="dropdown-item" href="https://wa.me/6285877401876?text=Halo,%20saya%20ingin%20memesan%20Dada%20Ayam">Beli</a></li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-6 col-lg-3 mb-3">
+                              <div class="text-left shadow-sm hover-border position-relative">
+                                  <img src="image/paha-ayam-2.jpg" class="card-img-top" alt="Comfy Walk Women's Casual Shoes - Beige">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Paha Ayam - 1Kg</h5>
+                                      <p class="card-text font-weight-bold">Rp. 30.000</p>
+                                      <div class="dropdown">
+                                        <button class="btn btn-outline-success dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Selengkapnya
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                                          <li><a class="dropdown-item" href="https://wa.me/6285877401876?text=Halo,%20saya%20ingin%20memesan%20Paha%20Ayam">Beli</a></li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-6 col-lg-3 mb-3" >
+                              <div class="text-left shadow-sm hover-border position-relative">
+                                  <img src="image/sayap-ayam-2.jpg" class="card-img-top" alt="Comfy Walk Women's Casual Shoes - Beige">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Sayap Ayam - 1Kg</h5>
+                                      <p class="card-text font-weight-bold">Rp. 35.000</p>
+                                      <div class="dropdown">
+                                        <button class="btn btn-outline-success dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Selengkapnya
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                                          <li><a class="dropdown-item" href="https://wa.me/6285877401876?text=Halo,%20saya%20ingin%20memesan%20Sayap%20Ayam">Beli</a></li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-6 col-lg-3 mb-3" >
+                              <div class="text-left shadow-sm hover-border position-relative">
+                                  <img src="image/paha+sayap.jpg" class="card-img-top" alt="Comfy Walk Women's Casual Shoes - Beige">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Paha + Sayap Ayam - 1Kg</h5>
+                                      <p class="card-text font-weight-bold">Rp. 35.000</p>
+                                      <div class="dropdown">
+                                        <button class="btn btn-outline-success dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Selengkapnya
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                                          <li><a class="dropdown-item" href="https://wa.me/6285877401876?text=Halo,%20saya%20ingin%20memesan%20Paha + Sayap%20Ayam">Beli</a></li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-6 col-lg-3 mb-3" >
+                              <div class="text-left shadow-sm hover-border position-relative">
+                                  <img src="image/paket-komplit.jpg" class="card-img-top" alt="Comfy Walk Women's Casual Shoes - Beige">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Paket Komplit - 1,5Kg</h5>
+                                      <p class="card-text font-weight-bold">Rp. 50.000</p>
+                                      <div class="dropdown">
+                                        <button class="btn btn-outline-success dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Selengkapnya
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                                          <li><a class="dropdown-item" href="https://wa.me/6285877401876?text=Halo,%20saya%20ingin%20memesan%20Paket Komplit%20Ayam">Beli</a></li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-6 col-lg-3 mb-3">
+                              <div class="text-left shadow-sm hover-border position-relative">
+                                  <img src="image/paha-ayam-4avif.avif" class="card-img-top" alt="Comfy Walk Women's Casual Shoes - Beige">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Paha Ayam - 2Kg</h5>
+                                      <p class="card-text font-weight-bold">Rp. 65.000</p>
+                                      <div class="dropdown">
+                                        <button class="btn btn-outline-success dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Selengkapnya
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                                          <li><a class="dropdown-item" href="https://wa.me/6285877401876?text=Halo,%20saya%20ingin%20memesan%20Paha%20Ayam">Beli</a></li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-6 col-lg-3 mb-3">
+                              <div class="text-left shadow-sm hover-border position-relative">
+                                  <img src="image/ayam-utuh-1.jpg" class="card-img-top" alt="Comfy Walk Women's Casual Shoes - Beige">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Ayam utuh - 2Kg</h5>
+                                      <p class="card-text font-weight-bold">Rp. 70.000</p>
+                                      <div class="dropdown">
+                                        <button class="btn btn-outline-success dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Selengkapnya
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                                          <li><a class="dropdown-item" href="https://wa.me/6285877401876?text=Halo,%20saya%20ingin%20memesan%20Ayam">Beli</a></li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                    </div>
+                    <!-- pagination -->
+                    <nav class="mt-4 d-flex justify-content-center" aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- buy now -->
+        <div class="container-fluid py-5 bg-success">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Gambar -->
+                    <div class="col-md-6 text-center mb-4 mb-md-0">
+                        <img src="image/ordernow.webp" alt="Ayam Fillet" class="img-fluid" style="width: 70%;">
+                    </div>
+        
+                    <!-- Konten -->
+                    <div class="col-md-6">
+                        <h2 class="text-light fw-bold mb-4 text-center text-md-start">Dengan Ayam Fillet Kami, Anda Mendapat Benefit:</h2>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center border-bottom border-light pb-2 mb-3" style="background-color: #000; padding: 10px; border-radius: 5px;">
+                                <i class="bi bi-check-circle-fill text-warning fs-4 me-2"></i>
+                                <span class="text-light">Kualitas Konsisten</span>
+                            </li>
+                            <li class="d-flex align-items-center border-bottom border-light pb-2 mb-3" style="background-color: #000; padding: 10px; border-radius: 5px;">
+                                <i class="bi bi-check-circle-fill text-warning fs-4 me-2"></i>
+                                <span class="text-light">Supplier Bersertifikasi Halal</span>
+                            </li>
+                            <li class="d-flex align-items-center border-bottom border-light pb-2 mb-3" style="background-color: #000; padding: 10px; border-radius: 5px;">
+                                <i class="bi bi-check-circle-fill text-warning fs-4 me-2"></i>
+                                <span class="text-light">Pengiriman yang dapat diandalkan</span>
+                            </li>
+                            <li class="d-flex align-items-center border-bottom border-light pb-2 mb-3" style="background-color: #000; padding: 10px; border-radius: 5px;">
+                                <i class="bi bi-check-circle-fill text-warning fs-4 me-2"></i>
+                                <span class="text-light">Fasilitas Bayar Tempo</span>
+                            </li>
+                        </ul>
+                        <div class="text-center text-md-start">
+                            <button class="btn btn-warning fw-bold shadow-lg px-4 py-2" style="transition: transform 0.3s;">Berlangganan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- footer -->
+        <footer class="bg-dark text-light py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Column 1: Download Our App -->
+                    <div class="col-md-3">
+                        <h5 class="fw-bold">Download Our App</h5>
+                        <p class="small">Download App Android and iOS Mobile Phone</p>
+                        <div class="d-flex">
+                            <img src="image/play-store.png" alt="Play Store" class="img-fluid me-2" style="max-width: 120px;">
+                            <img src="image/app-store.png" alt="App Store" class="img-fluid" style="max-width: 120px;">
+                        </div>
+                    </div>
+        
+                    <!-- Column 2: Logo and About -->
+                    <div class="col-md-4 text-center">
+                        <img src="image/LOGO AYAM.png" alt="Logo Ayamku" class="img-fluid mb-3" style="max-width: 220px;">
+                    </div>
+        
+                    <!-- Column 3: Useful Links -->
+                    <div class="col-md-2 offset-md-1 text-md-end">
+                        <h5 class="fw-bold">Useful Links</h5>
+                        <ul class="list-unstyled small">
+                            <li><a href="#" class="text-light text-decoration-none">Coupons</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Blog Post</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Return Policy</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Join Affiliate</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Column 4: Follow Us -->
+                    <div class="col-md-2 text-md-end">
+                        <h5 class="fw-bold">Follow Us</h5>
+                        <ul class="list-unstyled small">
+                            <li><a href="#" class="text-light text-decoration-none">Facebook</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Twitter</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Instagram</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="text-light my-4">
+                <p class="text-center small mb-0">Copyright &copy; 2024 Krisna Taufik. All Rights Reserved.</p>
+            </div>
+        </footer>
+    
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <script>
+        function sortProducts(order) {
+            const products = Array.from(document.querySelectorAll('.col-sm-6.col-lg-3'));
+            
+            // Bubble Sort
+            for (let i = 0; i < products.length - 1; i++) {
+                for (let j = 0; j < products.length - i - 1; j++) {
+                    const priceA = parseInt(products[j].querySelector('.card-text').textContent.replace(/[^0-9]/g, ''));
+                    const priceB = parseInt(products[j + 1].querySelector('.card-text').textContent.replace(/[^0-9]/g, ''));
+                    
+                    if ((order === 'asc' && priceA > priceB) || (order === 'desc' && priceA < priceB)) {
+                        // Swap products
+                        const temp = products[j];
+                        products[j] = products[j + 1];
+                        products[j + 1] = temp;
+                    }
+                }
+            }
+            const productContainer = document.querySelector('.row.mt-5.justify-content-center');
+            productContainer.innerHTML = '';
+        
+            products.forEach(product => {
+                productContainer.appendChild(product);
+            });
+        }
+
+        function searchAndSort() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const order = document.getElementById('sortSelect').value; // Ambil nilai urutan dari dropdown
+            const products = Array.from(document.querySelectorAll('.col-sm-6.col-lg-3'));
+        
+            // Filter produk berdasarkan input pencarian
+            products.forEach(product => {
+                const productName = product.querySelector('.card-title').textContent.toLowerCase();
+                
+                if (productName.includes(input)) {
+                    product.style.display = 'block'; // Tampilkan produk
+                } else {
+                    product.style.display = 'none'; // Sembunyikan produk
+                }
+            });
+        
+            // Setelah memfilter, lakukan pengurutan
+            sortProducts(order);
+        }
+
+        //pencarian
+
+        function jumpSearch(products, searchTerm) {
+          const n = products.length;
+          const step = Math.floor(Math.sqrt(n)); // Panjang langkah (step size)
+          let prev = 0;
+      
+          // Langkah-langkah untuk menemukan blok yang mungkin mengandung elemen
+          while (
+              prev < n &&
+              products[Math.min(step, n) - 1]
+                  .querySelector('.card-title')
+                  .textContent.toLowerCase() < searchTerm.toLowerCase()
+          ) {
+              prev = step;
+              step += Math.floor(Math.sqrt(n));
+              if (prev >= n) return []; // Jika sudah melewati akhir array
+          }
+      
+          // Pencarian linier dalam blok yang ditemukan
+          while (
+              prev < Math.min(step, n) &&
+              products[prev].querySelector('.card-title').textContent.toLowerCase() <= searchTerm.toLowerCase()
+          ) {
+              const productName = products[prev].querySelector('.card-title').textContent.toLowerCase();
+              if (productName.includes(searchTerm.toLowerCase())) {
+                  return [products[prev]]; // Kembalikan elemen yang cocok
+              }
+              prev++;
+          }
+      
+          return []; // Tidak ditemukan
+      }
+      
+
+
+
+AOS.init();
+</script>
+</body>
+</html>
