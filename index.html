@@ -184,7 +184,7 @@
                       Selengkapnya
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                      <li><a class="dropdown-item" href="detail1.html">Lihat</a></li>
                       <li><a class="dropdown-item" href="https://wa.me/6285877401876?text=Halo,%20saya%20ingin%20memesan%20Paha%20Ayam%20Fillet">Beli</a></li>
                     </ul>
                   </div>
@@ -204,7 +204,7 @@
                       Selengkapnya
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                      <li><a class="dropdown-item" href="detail2.html">Lihat</a></li>
                       <li><a class="dropdown-item" href="https://wa.me/6285877401876?text=Halo,%20saya%20ingin%20memesan%20Sayap%20Ayam%20Fillet">Beli</a></li>
                     </ul>
                   </div>
@@ -218,13 +218,13 @@
                 <img src="image/ayam-utuh-1.jpg" class="card-img-top" alt="Ceker Ayam">
                 <div class="card-body text-center">
                   <h5 class="card-title">Ayam Utuh</h5>
-                  <p class="card-text fw-bold">Rp. 25.000 / kg</p>
+                  <p class="card-text fw-bold">Rp. 35.000 / kg</p>
                   <div class="dropdown">
                     <button class="btn btn-outline-success dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       Selengkapnya
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="detail.html">Lihat</a></li>
+                      <li><a class="dropdown-item" href="detail3.html">Lihat</a></li>
                       <li><a class="dropdown-item" href="https://wa.me/6285877401876?text=Halo,%20saya%20ingin%20memesan%20Ceker%20Ayam">Beli</a></li>
                     </ul>
                   </div>
@@ -582,43 +582,32 @@
               <p class="text-center">Hubungi Kami Jika Butuh Bantuan !!!</p>
           
               <div class="row">
-                <!-- Form Kontak (diletakkan di sebelah kiri) -->
-                <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-down"data-aos-easing="linear" data-aos-duration="1000">
-                  <form class="mt-4" id="contactForm" onsubmit="return validateForm()" method="post">
+                <div class="col-md-6 col-lg-6 mb-4">
+                  <form name="submit-to-google-sheet" id="contactForm">
                     <div class="mb-3">
-                      <label for="Nama" class="form-label">Nama</label>
-                      <input type="text" class="form-control" id="nama" required>
-                      <div class="invalid-feedback" id="namaError" style="display: none;">
-                        Nama tidak valid atau kosong.
-                      </div>
+                      <label class="form-label">Nama</label>
+                      <input type="text" class="form-control" id="nama" name="nama" required>
                     </div>
                     <div class="mb-3">
-                      <label for="No Kontak" class="form-label">No. Kontak</label>
-                      <input type="text" class="form-control" id="nokontak" required>
-                      <div class="invalid-feedback" id="nokontakError" style="display: none;">
-                        No. Kontak tidak valid atau kosong.
-                      </div>
+                      <label class="form-label">No. Kontak</label>
+                      <input type="text" class="form-control" id="nokontak" name="no" required>
                     </div>
                     <div class="mb-3">
-                      <label for="Pesan" class="form-label">Pesan</label>
-                      <textarea class="form-control" id="pesan" rows="5" required></textarea>
-                      <div class="invalid-feedback" id="pesanError" style="display: none;">
-                        Pesan tidak valid atau kosong.
-                      </div>
+                      <label class="form-label">Pesan</label>
+                      <textarea class="form-control" id="pesan" name="pesan" rows="5" required></textarea>
                     </div>
-                    <div>
-                      <button type="submit" class="btn btn-success text-light w-100">Kirim</button>
-                    </div>
+                    <button type="submit" class="btn btn-success w-100">Kirim</button>
+                    <p class="mt-2 text-success" id="successMsg" style="display: none;">Pesan berhasil dikirim!</p>
                   </form>
                 </div>
-          
-                <!-- Maps --> 
-                <div class="col-md-6 col-lg-6" data-aos="fade-down"data-aos-easing="linear" data-aos-duration="1000">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1986.14196713316!2d105.24882238384812!3d-5.373602450354294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db4e3e7712e7%3A0x1bba0933d8d609f2!2sAyam%20Potong%20Fillet%20fress!5e0!3m2!1sen!2sid!4v1733213818220!5m2!1sen!2sid" width="100%" height="400" style="border:0; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                    <!-- Maps -->
+                    <div class="col-md-6 col-lg-6" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1986.14196713316!2d105.24882238384812!3d-5.373602450354294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db4e3e7712e7%3A0x1bba0933d8d609f2!2sAyam%20Potong%20Fillet%20fress!5e0!3m2!1sen!2sid!4v1733213818220!5m2!1sen!2sid" width="100%" height="400" style="border:0; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
           
 
             <!-- footer -->
@@ -674,8 +663,6 @@
       <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-        <script>
-    AOS.init();
-  </script>
+      <script src="script.js"></script>
 </body>
 </html>
